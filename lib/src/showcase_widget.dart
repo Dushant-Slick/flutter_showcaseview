@@ -167,6 +167,12 @@ class ShowCaseWidgetState extends State<ShowCaseWidget> {
     });
   }
 
+  @override
+  void didUpdateWidget(ShowCaseWidget oldWidget) {
+    initRootWidget();
+    super.didUpdateWidget(oldWidget);
+  }
+
   /// Starts Showcase view from the beginning of specified list of widget ids.
   /// If this function is used when showcase has been disabled then it will
   /// throw an exception.
